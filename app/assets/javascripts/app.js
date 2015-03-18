@@ -1,0 +1,1 @@
+angular.module('CodeQuiz', ['ngRoute', 'ngResource']);
