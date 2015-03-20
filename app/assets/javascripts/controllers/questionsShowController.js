@@ -6,4 +6,5 @@ angular.module('CodeQuiz').controller('QuestionsShowController', function(Questi
       $location.path("/");
     });
   }
+
 });
