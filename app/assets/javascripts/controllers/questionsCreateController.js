@@ -10,7 +10,7 @@ angular.module('CodeQuiz').controller('QuestionsCreateController', function(Ques
     var dataList = 'title=' + title + '&content=' + content + '&language=' + language;
     $http({
       method: 'POST',
-      url: 'http://localhost:3000/api/v1/questions',
+      url: 'https://gyzen-code-quiz.herokuapp.com/api/v1/questions',
       data: dataList,
       headers: {'Content-Type': 'application/x-www-form-urlencoded'}
     })
