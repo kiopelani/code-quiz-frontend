@@ -12,7 +12,15 @@
 
   <fieldset class="form-group">
     <label for="language">Language</label>
-    <input class="form-control" type="text" id="content" name="language" ng-model="question.language">
+    <select id="language" ng-model="question.language">
+      <option value="ruby">Ruby</option>
+      <option value="javascript">Javascript</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="sql">SQL</option>
+      <option value="sql">Any</option>
+      <option value="html">Other</option>
+    </select>
   </fieldset>
 
   <input type="submit" value="{{isSaving ? 'saving...' : 'Save'}}" class="btn btn-default" ng-click="createQuestion(question)" ng-disabled="isSaving">
