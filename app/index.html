@@ -17,12 +17,21 @@
    <link rel="stylesheet" href="assets/styles/app.css">
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="/#/">CodeQuiz</a>
+          </div>
+          <cq-page-nav></cq-page-nav>
+      </div>
+    </div>
+  </nav>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <h1>CodeQuiz</h1>
   <div ng-view class="container-fluid"></div>
 
 
@@ -39,6 +48,7 @@
   <script src="assets/javascripts/app.js"></script>
   <script src="assets/javascripts/routes.js"></script>
   <!-- Directives -->
+  <script src="assets/javascripts/directives/cqPageNav.js"></script>
   <!-- Controllers -->
   <script src="assets/javascripts/controllers/questionsIndexController.js"></script>
   <script src="assets/javascripts/controllers/questionsShowController.js"></script>
