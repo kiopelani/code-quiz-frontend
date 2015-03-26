@@ -6,7 +6,7 @@ angular.module('CodeQuiz').directive('cqLanguageSelector', function(){
     templateUrl: 'assets/templates/directives/cqLanguageSelector.html',
     link: function(scope, element, attrs, ngModelCtrl){
       var activeLanguage = "";
-      scope.languages = ["ruby", "javascript", "html", "css", "sql"];
+      scope.languages = ["any", "javascript", "html", "css", "ruby", "other"];
       scope.isActive = function(language){
         return (activeLanguage && activeLanguage === language);
       };
